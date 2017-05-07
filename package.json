@@ -1,0 +1,44 @@
+{
+  "name": "backendapp",
+  "engines": {
+    "node": ">=6.0"
+  },
+  "version": "0.0.1",
+  "description": "backend App for marketing",
+  "main": "server.js",
+  "scripts": {
+    "test": "NODE_ENV=test lab -v -C -D -c --coverage-exclude node_modules -t 85",
+    "test-cov-html": "lab -r html -o coverage.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://viditbhatia@bitbucket.org/marketingappteam/backendapp.git"
+  },
+  "author": "vidit bhatia",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/marketingappteam/backendapp#readme",
+  "dependencies": {
+    "eslint-config-hapi": "^10.0.0",
+    "eslint-plugin-hapi": "^4.0.0",
+    "fs": "0.0.1-security",
+    "good": "^7.1.0",
+    "good-console": "^6.4.0",
+    "good-squeeze": "^5.0.2",
+    "hapi": "^16.1.1",
+    "hapi-authorization": "^3.0.2",
+    "hapi-config": "^0.2.2",
+    "hapi-postgres-connection": "^6.1.0",
+    "hapi-rbac": "^2.3.0",
+    "hapi-swagger": "^7.7.0",
+    "inert": "^4.2.0",
+    "joi": "^10.4.1",
+    "lodash": "^4.17.4",
+    "pg": "^6.1.5",
+    "promise": "^7.1.1",
+    "vision": "^4.1.1"
+  },
+  "devDependencies": {
+    "code": "^3.0.1",
+    "lab": "^10.9.0"
+  }
+}
